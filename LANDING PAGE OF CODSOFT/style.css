@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+input::placeholder{
+    color: #151616;
+}
+body{
+    min-height: 100vh;
+    background-image: url(travel.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1300px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+.nav-logo a{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #04482c;
+    font-family: cursive;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.nav-links .link{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #04482c;
+    cursor: pointer;
+    transition: .3s all linear;
+}
+.nav-links .link:hover{
+    background: black;
+    color: #e2e6ea;
+    padding: 2px;
+}
+.search-box{
+    padding: 1rem 2rem; 
+    border-bottom: 2px solid #04482c;
+}
+.search-box input{
+    color: #04482c;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+.search-box i{
+    color: #04482c;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    max-width: 1300px;
+    margin: auto;
+    padding: 2rem;
+    padding-top: 100px;
+    position: relative;
+}
+.container-left, .container-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.container-left .content{
+    max-width: 400px;
+    display: grid;
+    gap: 1rem;
+}
+.content h1{
+    font-size: 4rem;
+    line-height: 4rem;
+    color: #04345b;
+    font-weight: 700;
+}
+.content h1 .over{
+    color: #eaf4ee;
+}
+.content h1 .over2{
+    color: #e2e6ea;
+}
+.content p{
+    margin-top: 2rem;
+  color: #e2e6ea;
+  font-size: 1rem;
+  background: #04345b;
+  padding: 2.5rem;
+  border-radius: 5rem;
+  transition: .5s all linear;
+}
+.content p:hover{
+    background: #6d889c;
+    color: #000;
+    cursor: pointer;
+}
+.btns{
+    display: flex;
+    gap: 2rem;
+}
+.btns button{
+    padding: 1rem 1rem;
+    color: #000;
+    font-size: 1.5rem;
+    background: transparent;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .3s all linear;
+}
+button.read-more:hover{
+    background: #e2e6ea;
+    color: #000;
+}
+button.our-blogs:hover{
+    background: #e2e6ea;
+    color: #000;
+}
+.chevrons{
+    display: flex;
+    gap: 2rem;
+}
+.chevrons span{
+    height: 40px;
+    width: 40px;
+    font-size: 2rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #e2e6ea;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: .3s all linear;
+}
+.chevrons span:hover{
+    background: #000;
+    color: #e2e6ea;
+}
+.container-right{
+    justify-content: flex-end;
+}
+form{
+    width: 400px;
+    display: grid;
+    border-radius: 5px;
+    background: #04345b;
+    color: #e2e6ea;
+}
+form h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 2rem;
+}
+.form-group{
+    display: grid;
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+} 
+.form-group input{
+    padding: .5rem;
+    font-size: 1rem;
+    color: #000;
+    outline: none;
+    border: none;
+}
+form button{
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background: #e2e6ea;
+    color: #000;
+    cursor: pointer;
+}
+.bottom-tracker{
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+}
+
